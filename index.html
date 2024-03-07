@@ -7,8 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
     rel="stylesheet"
      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
      <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald:wght@200..700&family=Pacifico&display=swap');
+
         .video-card-thumbnail
         {
             border-radius: 5px;
@@ -27,18 +28,130 @@
             height: 50px;
             border-radius:50% ;
         }
+        .circle-size
+         {
+            font-size: 10px;
+            
+         }
+         .icon
+         {
+               
+              height: 40px;
+              width: 40px;
+              border-radius: 50%;
+    
+    
+         }
+    .title{
+        font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+font-size: 22px;
+
+    }
+    
      </style>
      
 </head>
-<body class="bg-dark">
-    <div class="container my-2">
-        <div class="row ">
+<body class="bg-dark navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    
+        <nav class="navbar navbar-expand-lg  bg-body-tertiary bg-dark p-2">
+        <div class="container-fluid ">
+          <a class="navbar-brand" href="#">
+             <img class="icon" src="./img/hamburgur_menu.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <div class="d-flex">
+                <a class="nav-link active" aria-current="page" href="#"> 
+                    <img style="width:40px"  class="icon " src="./img/youtube.png" ></a>
+                    <span  class="my-3 text-light title" >YouTube</span>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> </a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true"></a>
+              </li>
+            </ul>
+    
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+            <form class=" d-flex"  role="search" >
+                <div class="input-group ">
+                    <input style="margin-left: 200px; width: 400px; color: white;height: 40px;" class="form-control me-2 my-2" type="search" placeholder="Search" aria-label="Search">
+                  <span class="input-group-text d-flex my-2" id="basic-addon1"style="height:40px">
+                    <img src="./img/search-icon.png "class=" ms-3" style="height: 30px;width: 35px;">
+                  </span>
+                </div>
+              </form>
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                     <img class="icon bg-white ms-3 " src="./img/mic.png" > 
+               </a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <img class=" bg-white "  style="height: 40px;  width: 40px; margin-left: 150px;border-radius: 50%;" src="./img/video-player.png" > </a>
+              </li>
+     
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <img class="icon bg-white ms-2 " style="height: 40px; width: 40px; border-radius: 50%;" src="./img/bell-icon-with-one-notification-removebg-preview.png" > </a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <img class="icon bg-white ms-2" style="height: 40px; width: 40px; border-radius: 50%;" src="./img/bhakti.jpg" > </a>
+              </li>
+    
+            </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+    <div class="d-inline ms-2 "style="height: 40px;  width: 40px; margin-left: 150px;border-radius: 50%;margin-bottom: 800px;" >
+     <img  class="d-block mt-4 bg-white mx-3"   src="./img/home.png" style="width:40px; height: 40px; border-radius: 50%;" class="mt-1">
+    <span class="text-light mx-3 ">home</span> 
+     <img class="d-block mt-4 bg-white  mx-3"  src="./img/youtube-shorts-logo-15252.png" style="width: 40px; height: 40px; border-radius: 50%;" class="mt-1">
+     <span class="text-light mx-3 ">shorts</span> 
+     <img class="d-block mt-4 bg-white  mx-3"  src="./img/youtube (1).png" style="width: 40px; height: 40px; border-radius: 50%;" class="mt-1">
+     <span class="text-light"> subscription</span> 
+     <img class="d-block mt-4  mx-3"  src="./img/you.png" style="width: 40px; height: 40px; border-radius: 50%;" class="mt-1">
+   <span class="text-light mx-4 "> You </span> 
+    
+   
+    </div>
+    
+        <div class="container d-inline" style="margin-top: -100px;">
+    
+          
+                <button type="button" class="btn btn-light btn-sm ms-4">Home</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2">Music</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Doremon</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Mixes</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Masala Films</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Lo-Fi</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Bollywood Music</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2">Computer Science</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Live</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2"> Tamil cinema</button>
+                <button type="button" class="btn btn-secondary btn-sm ms-2">  Mantra</button>
+        
+    <!-- <div class="container my-2"> -->
+        <div class="row">
         <div class="col-md-4">
             <div class="video-card text-light " >
                 <img src='./img/bapplyoke2.jpg' class="img-fluid m-2 video-card-thumbnail "/>
-
-            <div class="d-flex">
-            <div>
+                <div class="d-flex">
+                <div>
                 <img src="./img/baaplyoke_profile.jpg" class="img-fluid channel-logo mt-1 mx-2"/>
             </div>
             <div>
@@ -155,4 +268,23 @@
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
